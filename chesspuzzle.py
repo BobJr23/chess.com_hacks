@@ -168,17 +168,17 @@ while True:
             try:
                 get_board("p")
                 time.sleep(1.5)
-            # OPTIONAL
+            # OPTIONAL####### STOCKFISH DOES CRASH OCCASIONALLY, this will notify you
             except Exception as e:
                 notification.notify(
                     title="RIP Stockfish",
                     message=str(e),
-                    app_icon=r"C:\Users\maand\OneDrive\CodingProjects\sfish.ico",
+                    app_icon=r"PATH TO .ico FILE",
                     app_name="Stockfish",
                     timeout=3,
                 )
                 time.sleep(3)
-            ###
+            #################
     else:
         while True:
             try:
